@@ -1,6 +1,6 @@
 ﻿namespace CleanArchitecture.Domain.Entities
 {
-    class Product
+    public sealed class Product
     {
         public int Id { get; private set; }
         public string Name { get; private set; }
