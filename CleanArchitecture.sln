@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Web", "Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain.Tests", "CleanArchitecture.Domain.Tests\CleanArchitecture.Domain.Tests.csproj", "{73E5784E-EDA6-4E59-9ECD-EAE8CF136165}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{03248EF4-360D-4EC9-8D49-3B61B6633ED9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA617A47-EB85-49B5-91E3-7E96323EE680} = {03248EF4-360D-4EC9-8D49-3B61B6633ED9}
+		{49081E0F-737B-4701-A5C7-1FB1449DE70D} = {03248EF4-360D-4EC9-8D49-3B61B6633ED9}
+		{A4C92CB8-13E7-4C8E-9F02-72AC761DF3FD} = {03248EF4-360D-4EC9-8D49-3B61B6633ED9}
+		{12BDC269-181B-40EA-9B0A-A890DF28B828} = {03248EF4-360D-4EC9-8D49-3B61B6633ED9}
+		{A1C7AB04-EFCE-4497-AEC6-44E3C0921BE2} = {03248EF4-360D-4EC9-8D49-3B61B6633ED9}
+		{73E5784E-EDA6-4E59-9ECD-EAE8CF136165} = {03248EF4-360D-4EC9-8D49-3B61B6633ED9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEF7AAE2-5905-4BD8-B770-A06C11C254BE}
