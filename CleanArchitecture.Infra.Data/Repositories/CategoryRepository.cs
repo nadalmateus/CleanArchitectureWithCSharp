@@ -16,14 +16,12 @@ namespace CleanArchitecture.Infra.Data.Repositories
 
         public async Task<IEnumerable<Category>> GetCategoriesAsync()
         {
-            var categoryList = await _categoryContext.Categories.ToListAsync();
-            return categoryList;
+            return await _categoryContext.Categories.ToListAsync();
         }
 
         public async Task<Category> GetCategoryByIdAync(int? id)
         {
-            var categoryByiD = await _categoryContext.Categories.FindAsync(id);
-            return categoryByiD;
+            return await _categoryContext.Categories.FindAsync(id);
         }
 
         public async Task<Category> CreateCategoryAsync(Category category)
