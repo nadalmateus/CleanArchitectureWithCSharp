@@ -8,7 +8,7 @@ namespace CleanArchitecture.Infra.Data.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        ApplicationDbContext _productContext;
+        readonly ApplicationDbContext _productContext;
         public ProductRepository(ApplicationDbContext applicationDbContext)
         {
             _productContext = applicationDbContext;
