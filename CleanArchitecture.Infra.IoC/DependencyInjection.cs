@@ -22,5 +22,6 @@ namespace CleanArchitecture.Infra.IoC
 
             return services;
         }
+
     }
 }
