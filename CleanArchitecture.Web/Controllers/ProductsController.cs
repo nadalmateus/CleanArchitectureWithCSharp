@@ -15,7 +15,7 @@ namespace CleanArchitecture.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-           var products = await _productService.GetProductsAsync();
+            var products = await _productService.GetProductsAsync();
 
             return View(products);
         }
