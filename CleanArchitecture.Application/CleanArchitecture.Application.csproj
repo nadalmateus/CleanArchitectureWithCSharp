@@ -19,9 +19,7 @@
         <Folder Include="Mappings\" />
         <Folder Include="DTOs\" />
         <Folder Include="Interfaces\" />
-        <Folder Include="Products\Commands\" />
         <Folder Include="Products\Handlers\" />
-        <Folder Include="Products\Queries\" />
         <Folder Include="Services\" />
     </ItemGroup>
 
