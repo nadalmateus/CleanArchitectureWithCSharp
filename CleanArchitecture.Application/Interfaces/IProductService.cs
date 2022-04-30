@@ -4,10 +4,10 @@ namespace CleanArchitecture.Application.Interfaces
 {
     public interface IProductService
     {
-        Task<ProductDTO> GetProductByIdAync(int? id);
+        //Task<ProductDTO> GetProductByIdAync(int? id);
         Task<IEnumerable<ProductDTO>> GetProductsAsync();
-        Task CreateProductsAsync(ProductDTO productDTO);
-        Task UpdateProductsAsync(ProductDTO productDTO);
-        Task DeleteProductsAsync(int? id);
+        //Task CreateProductsAsync(ProductDTO productDTO);
+        //Task UpdateProductsAsync(ProductDTO productDTO);
+        //Task DeleteProductsAsync(int? id);
     }
 }
