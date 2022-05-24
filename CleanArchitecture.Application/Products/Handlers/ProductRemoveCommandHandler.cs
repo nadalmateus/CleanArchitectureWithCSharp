@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Application.Products.Commands;
+using CleanArchitecture.Application.Products.Commands;
 using CleanArchitecture.Domain.Entities;
 using CleanArchitecture.Domain.Interfaces;
 
@@ -20,7 +20,7 @@ namespace CleanArchitecture.Application.Products.Handlers
 
             if (product == null)
             {
-                throw new ApplicationException($"Entity could not be found");
+                throw new ApplicationException("Entity could not be found");
             }
             else
             {

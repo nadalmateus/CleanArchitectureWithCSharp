@@ -24,7 +24,7 @@ namespace CleanArchitecture.Application.Services
             var productByIdQuery = new GetProductByIdQuery(id.Value);
             if (productByIdQuery == null)
             {
-                throw new Exception($"Entity could not be loaded");
+                throw new Exception("Entity could not be loaded");
             }
             var result = await _mediator.Send(productByIdQuery);
             return _mapper.Map<ProductDTO>(result);
@@ -35,7 +35,7 @@ namespace CleanArchitecture.Application.Services
             var productsQuery = new GetProductsQuery();
             if (productsQuery == null)
             {
-                throw new Exception($"Entity could not be loaded");
+                throw new Exception("Entity could not be loaded");
             }
             var result = await _mediator.Send(productsQuery);
             return _mapper.Map<IEnumerable<ProductDTO>>(result);
@@ -58,7 +58,7 @@ namespace CleanArchitecture.Application.Services
             var productRemoveCommand = new ProductRemoveCommand(id.Value);
             if (productRemoveCommand == null)
             {
-                throw new Exception($"Entity could not be loaded");
+                throw new Exception("Entity could not be loaded");
             }
             await _mediator.Send(productRemoveCommand);
         }
