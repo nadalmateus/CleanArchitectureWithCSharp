@@ -1,7 +1,7 @@
 using CleanShop.Domain.Validation;
 
 namespace CleanShop.Domain.Entities;
-public sealed class Category
+public sealed class Category : BaseEntity
 {
     public Category(string name)
     {
@@ -10,13 +10,18 @@ public sealed class Category
     public Category(int id, string name)
     {
         DomainExceptionValidation.When(id < 0, "Invalid ID value");
+        Id = id;
         ValidateDomain(name);
     }
 
-    public int Id { get; private set; }
     public string Name { get; private set; }
 
     public ICollection<Product> Products { get; set; }
+
+    public void Update(string name)
+    {
+        ValidateDomain(name);
+    }
 
     private void ValidateDomain(string name)
     {
