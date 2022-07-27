@@ -1,5 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\CleanShop.Domain\CleanShop.Domain.csproj" />
+    <ProjectReference Include="..\CleanShop.Application\CleanShop.Application.csproj" />
+    <ProjectReference Include="..\CleanShop.Infra.Data\CleanShop.Infra.Data.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
