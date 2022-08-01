@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+
 using CleanShop.WebUI.Models;
+
+using Microsoft.AspNetCore.Mvc;
 
 namespace CleanShop.WebUI.Controllers;
 
