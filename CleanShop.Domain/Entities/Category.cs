@@ -9,7 +9,7 @@ public sealed class Category : BaseEntity
     }
     public Category(int id, string name)
     {
-        DomainExceptionValidation.When(id < 0, "Invalid ID value");
+        DomainExceptionValidation.When(id < 0, "Invalid Id value");
         Id = id;
         ValidateDomain(name);
     }

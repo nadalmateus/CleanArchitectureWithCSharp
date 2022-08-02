@@ -12,7 +12,7 @@ public sealed class Product : BaseEntity
 
     public Product(int id, string name, string description, decimal price, int stock, string image)
     {
-        DomainExceptionValidation.When(id < 0, "Invalid ID value");
+        DomainExceptionValidation.When(id < 0, "Invalid Id value");
         Id = id;
         Validate(name, description, price, stock, image);
     }
