@@ -4,7 +4,6 @@ namespace CleanShop.Domain.Entities;
 
 public sealed class Product : BaseEntity
 {
-
     public Product(string name, string description, decimal price, int stock, string image)
     {
         Validate(name, description, price, stock, image);
@@ -37,7 +36,8 @@ public sealed class Product : BaseEntity
         DomainExceptionValidation.When(string.IsNullOrEmpty(name), "Invalid name.Name is required");
         DomainExceptionValidation.When(name.Length < 3, "Invalid name, to short, minmum 3 characters");
 
-        DomainExceptionValidation.When(string.IsNullOrEmpty(description), "Invalid description.Description is required");
+        DomainExceptionValidation.When(string.IsNullOrEmpty(description),
+            "Invalid description.Description is required");
         DomainExceptionValidation.When(description.Length < 5, "Invalid name, to short, minmum 3 characters");
 
         DomainExceptionValidation.When(price < 0, "Invalid Price value");

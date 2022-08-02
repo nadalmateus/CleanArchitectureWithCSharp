@@ -1,6 +1,7 @@
 using CleanShop.Domain.Entities;
 
 namespace CleanShop.Domain.Interfaces;
+
 public interface IProductRepository
 {
     Task<IEnumerable<Product>> GetProductsAsync();

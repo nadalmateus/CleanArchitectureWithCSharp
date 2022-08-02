@@ -1,12 +1,14 @@
 using CleanShop.Domain.Validation;
 
 namespace CleanShop.Domain.Entities;
+
 public sealed class Category : BaseEntity
 {
     public Category(string name)
     {
         ValidateDomain(name);
     }
+
     public Category(int id, string name)
     {
         DomainExceptionValidation.When(id < 0, "Invalid Id value");

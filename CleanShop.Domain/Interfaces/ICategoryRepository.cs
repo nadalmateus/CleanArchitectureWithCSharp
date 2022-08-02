@@ -1,6 +1,7 @@
 using CleanShop.Domain.Entities;
 
 namespace CleanShop.Domain.Interfaces;
+
 public interface ICategoryRepository
 {
     Task<IEnumerable<Category>> GetCategoriesAsync();
