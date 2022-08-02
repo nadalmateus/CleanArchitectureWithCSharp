@@ -44,7 +44,7 @@ public sealed class Product : BaseEntity
 
         DomainExceptionValidation.When(stock < 0, "Invalid Stock value");
 
-        DomainExceptionValidation.When(image.Length > 250, "Invalid image url, to long, maximun 250 characters");
+        DomainExceptionValidation.When(image?.Length > 250, "Invalid image url, to long, maximun 250 characters");
 
 
         Name = name;

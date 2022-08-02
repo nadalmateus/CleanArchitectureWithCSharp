@@ -42,6 +42,13 @@ public class ProductUnitTest
     }
 
     [Fact]
+    public void CreateProduct_WithNullImageName_NoNullReferenceException()
+    {
+        Action action = () => new Product(1, "Pruduct Name", "Product Description", 99.9m, 99, null);
+        action.Should().NotThrow<NullReferenceException>();
+    }
+
+    [Fact]
     public void CreateProduct_WithEmptyImageName_DomainExceptionValidation()
     {
         Action action = () => new Product(1, "Pruduct Name", "Product Description", 99.9m, 99, "");
