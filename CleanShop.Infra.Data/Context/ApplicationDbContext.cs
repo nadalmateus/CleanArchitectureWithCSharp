@@ -22,5 +22,5 @@ public class ApplicationDbContext : DbContext
 }
 
 
-// To run migrations with .net cli you should use: dotnet ef migrations add MigrationName -s .\CleanShop.WebUI\ -p .\CleanShop.Infra.Data\
-// or dotnet ef migrations add MigrationName -s .\CleanShop.WebApi\ -p .\CleanShop.Infra.Data\
+//To add migrations use: dotnet ef migrations add MigrationName -s .\CleanShop.WebUI\ -p .\CleanShop.Infra.Data\
+//To update data base use: dotnet ef database update -s .\CleanShop.WebUI\ -p .\CleanShop.Infra.Data\
