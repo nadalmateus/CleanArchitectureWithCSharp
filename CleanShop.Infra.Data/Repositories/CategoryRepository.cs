@@ -8,42 +8,41 @@ namespace CleanShop.Infra.Data.Repositories;
 
 public class CategoryRepository : ICategoryRepository
 {
-    private readonly ApplicationDbContext _categoryContext;
+    private readonly ApplicationDbContext _context;
 
     public CategoryRepository(ApplicationDbContext context)
     {
-        _categoryContext = context;
+        _context = context;
     }
-
 
     public async Task<IEnumerable<Category>> GetCategoriesAsync()
     {
-        return await _categoryContext.Categories.ToListAsync();
+        return await _context.Categories.ToListAsync();
     }
 
     public async Task<Category> GetCategoryAsync(int? id)
     {
-        return await _categoryContext.Categories.FindAsync(id);
+        return await _context.Categories.FindAsync(id);
     }
 
     public async Task<Category> CreateCategoryAsync(Category category)
     {
-        _categoryContext.Add(category);
-        await _categoryContext.SaveChangesAsync();
+        _context.Add(category);
+        await _context.SaveChangesAsync();
         return category;
     }
 
     public async Task<Category> UpdateCategoryAsync(Category category)
     {
-        _categoryContext.Update(category);
-        await _categoryContext.SaveChangesAsync();
+        _context.Update(category);
+        await _context.SaveChangesAsync();
         return category;
     }
 
     public async Task<Category> DeleteCategoryAsync(Category category)
     {
-        _categoryContext.Remove(category);
-        await _categoryContext.SaveChangesAsync();
+        _context.Remove(category);
+        await _context.SaveChangesAsync();
         return category;
     }
 }
