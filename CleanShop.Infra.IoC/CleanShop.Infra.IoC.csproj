@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CleanShop.Domain\CleanShop.Domain.csproj" />
     <ProjectReference Include="..\CleanShop.Application\CleanShop.Application.csproj" />
     <ProjectReference Include="..\CleanShop.Infra.Data\CleanShop.Infra.Data.csproj" />
