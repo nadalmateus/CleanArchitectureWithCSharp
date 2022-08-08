@@ -25,6 +25,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     "default",
-    "{controller=Categories}/{action=Index}/{id?}");
+    "{controller=Products}/{action=Index}/{id?}");
 
 app.Run();
